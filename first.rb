@@ -35,3 +35,27 @@ while i>0
 end
 puts
 
+ia = [1, 5, 10]
+puts ia[0]
+sa = ["a", "b"]
+puts sa[1]
+xa = [1, "a", 10, [5,3]]
+puts xa[2]
+puts xa[3][0]
+
+l=0
+while l<ia.length
+    print ia[l]
+    l+=1
+end
+puts
+xa.each do |i|
+    print i
+    print ","
+end
+puts
+
+5.times do
+    print "*"
+end
+puts

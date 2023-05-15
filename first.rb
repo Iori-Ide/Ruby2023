@@ -59,3 +59,11 @@ puts
     print "*"
 end
 puts
+
+s=gets
+s=schomp
+#s.chomp!
+puts "##"+s+"**"
+p s
+p 1
+p "1"

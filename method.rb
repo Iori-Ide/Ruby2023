@@ -1,6 +1,6 @@
 def max a, b
     if a>b
-        a
+        return a
     else
         b
     end

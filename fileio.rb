@@ -1,8 +1,8 @@
-f = File.open "ls.out" , "r"
-i = 1
-while line = f.gets
-    puts i.to_s + ": " + line
-    i += 1
+#f = File.open "ls.out" , "r"
+File.open("ls.out" , "r") do |f|
+    i = 1
+    while line = f.gets
+        puts i.to_s + ": " + line
+        i += 1
+    end
 end
-
-f.close

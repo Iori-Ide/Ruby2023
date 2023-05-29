@@ -1,6 +1,7 @@
 #キーボードから
-print "name?"
-name = gets
+#print "name?"
+#name = gets
+name = ARGV.join(":")
 #name.txt というファイルに変数 name の値を保存
 
 File.open "name.txt", "w" do |file|

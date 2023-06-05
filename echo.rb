@@ -6,9 +6,12 @@
 #end
 #puts
 
+msg=""
 i=0
 while i<ARGV.length
-    print ARGV[i] + " "
+    msg += ARGV[i] + " "
     i+=1
 end
-puts
+puts msg
+
+

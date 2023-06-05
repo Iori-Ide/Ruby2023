@@ -1,3 +1,4 @@
+#! /usr/bin/env ruby
 # コマンドライン引数の表示
 #msg = ARGV
 #len = msg.length

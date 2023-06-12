@@ -1,14 +1,42 @@
 require "socket"
 
 port = 80
-s=TCPSocket.open("www.is.kyusan-u.ac.jp",port)
-s.puts("GET /~toshi/ HTTP/1.0")
+host = ARGV[0]
+name = ARGV[1]
+
+
+s=TCPSocket.open(host,port)
+s.puts "GET   #{name}  HTTP/1.0"
 s.puts
+#flag=0
+#while line=s.gets
+#    line.chomp!
+#    break if line == ""
+#        flag=1
+        #line.chomp!
+#    end
+#    if flag==0
+#        next
+#    elsif flag == 1
+#        s.puts
+#    end
+#end
+#s.close
+
 while line=s.gets
     line.chomp!
     break if line == ""
-    #line.chomp!
-    puts line
 end
 
+while line=s.gets
+    line.chomp!
+    puts line
+end
 s.close
+#is_body = false
+#while line=s.gets
+#    line.chomp!
+#    puts line if is_body = 
+#    is_body = true if line == ""
+#        #line.chomp!
+#end

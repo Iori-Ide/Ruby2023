@@ -6,7 +6,8 @@ name = ARGV[1]
 
 
 s=TCPSocket.open(host,port)
-s.puts "GET   #{name}  HTTP/1.0"
+s.puts "GET   #{path}  HTTP/1.1"
+s.puts "Host: #{host}"
 s.puts
 #flag=0
 #while line=s.gets

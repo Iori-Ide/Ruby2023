@@ -28,6 +28,7 @@ s.puts
 #        flag=1
         #line.chomp!
 #    end
+#    line.chomp!
 #    if flag==0
 #        next
 #    elsif flag == 1
@@ -39,6 +40,7 @@ s.puts
 while line=s.gets
     line.chomp!
 puts line if disp_head
+    puts line if disp_head
     break if line == ""
 end
 

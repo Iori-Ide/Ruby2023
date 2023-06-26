@@ -12,6 +12,7 @@ gs = TCPServer.open 8080
 
 while true
     s = gs.accept
-
-    server s
+    Thread.new do
+        server s
+    end
 end
